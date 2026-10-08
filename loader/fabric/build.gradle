@@ -1,0 +1,20 @@
+plugins {
+	id '@@LOOM_ID@@' version '@@LOOM@@'
+}
+
+version = '@@VERSION@@'
+base { archivesName = 'instapack-fabric-@@MC@@' }
+
+dependencies {
+	minecraft 'com.mojang:minecraft:@@MC@@'
+	@@MAPPINGS@@
+	@@IMPL@@ 'net.fabricmc:fabric-loader:@@FABRIC_LOADER@@'
+}
+
+java {
+	toolchain.languageVersion = JavaLanguageVersion.of(@@JAVA@@)
+}
+
+tasks.withType(JavaCompile).configureEach {
+	options.release = @@JAVA@@
+}

@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "com.instapack.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"DownloadedPackSourceAccessor",
+		"DownloadedPackSourceMixin",
+		"FilePackResourcesMixin",
+		"MinecraftMixin",
+		"ReloadableResourceManagerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

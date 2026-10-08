@@ -1,0 +1,13 @@
+name: InstaPack
+version: '${project.version}'
+main: com.instapack.server.InstaPackPlugin
+api-version: '1.21'
+description: Hosts the server resource pack and sends only changed files to players with the InstaPack mod.
+commands:
+  instapack:
+    description: Rebuild the pack and push it to online players
+    usage: /instapack reload
+    permission: instapack.admin
+permissions:
+  instapack.admin:
+    default: op

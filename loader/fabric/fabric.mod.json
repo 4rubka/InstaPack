@@ -1,0 +1,15 @@
+{
+	"schemaVersion": 1,
+	"id": "instapack",
+	"version": "@@VERSION@@",
+	"name": "InstaPack",
+	"description": "Server resource packs load instantly: no reload when nothing changed, partial reloads, shared hash cache and per-file delta downloads with the InstaPack server plugin.",
+	"license": "MIT",
+	"environment": "client",
+	"mixins": ["instapack.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "@@MC_RANGE@@",
+		"java": ">=@@JAVA@@"
+	}
+}

@@ -1,0 +1,19 @@
+plugins {
+	id 'java'
+	id 'net.neoforged.moddev' version '@@MODDEV@@'
+}
+
+version = '@@VERSION@@'
+base { archivesName = 'instapack-neoforge-@@MC@@' }
+
+neoForge {
+	version = '@@NEOFORGE@@'
+}
+
+java {
+	toolchain.languageVersion = JavaLanguageVersion.of(@@JAVA@@)
+}
+
+tasks.withType(JavaCompile).configureEach {
+	options.release = @@JAVA@@
+}

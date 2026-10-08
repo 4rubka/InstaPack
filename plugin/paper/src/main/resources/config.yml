@@ -1,0 +1,27 @@
+# Put the pack, unzipped, into plugins/InstaPack/pack/ (or drop pack.zip next to this file).
+
+# Pack to serve instead of pack/: a folder or a zip made by another plugin.
+# A zip is sent to vanilla clients byte for byte; mod users still get only the changed files.
+source: ""
+
+# Port of the built-in pack web server. Must be reachable by players.
+port: 8765
+
+# Host players download from. Empty = the address each player typed to join, which works
+# for most setups. Set it when the web port is behind another domain or IP.
+public-host: ""
+
+# Send the pack when a player joins.
+send-on-join: true
+# Players who decline the pack are kicked.
+required: false
+# MiniMessage formatting
+prompt: "This server uses a custom resource pack."
+
+# Rebuild and push the pack to everyone online as soon as files in pack/ change.
+watch: true
+
+# Smaller packs download and load faster.
+optimize:
+  minify-json: true
+  strip-junk: true

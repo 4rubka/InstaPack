@@ -1,0 +1,18 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "instapack"
+version = "@@VERSION@@"
+displayName = "InstaPack"
+description = "Server resource packs load instantly: no reload when nothing changed, partial reloads, shared hash cache and per-file delta downloads with the InstaPack server plugin."
+
+[[mixins]]
+config = "instapack.mixins.json"
+
+[[dependencies.instapack]]
+modId = "minecraft"
+type = "required"
+versionRange = "[@@MC@@]"
+side = "CLIENT"
